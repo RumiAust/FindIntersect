@@ -20,8 +20,8 @@ public class FindIntersectRest {
     }
     @GetMapping("/findIntersection/{data}")
     public String getAttendanceData( @PathVariable(value = "data") String data) {
-       return "Result: mFindIntersectService.getIntersection(data)";
-        //return attendanceService.getData(id);
+       return mFindIntersectService.getIntersection(data);
+
     }
 
 }
