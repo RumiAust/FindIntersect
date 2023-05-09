@@ -6,6 +6,9 @@ public class FindIntersect {
     private List<Integer> intersectionList;
     private String timeInMillSec;
 
+    public FindIntersect() {
+    }
+
     public FindIntersect(List<Integer> intersectionList, String timeInMillSec) {
         this.intersectionList = intersectionList;
         this.timeInMillSec = timeInMillSec;
