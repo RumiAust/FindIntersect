@@ -11,15 +11,19 @@ import java.util.Arrays;
 public class FindIntersectRepo {
     @Autowired
     FindIntersectHelper mHelper;
-    public FindIntersect getIntersectionResult(String data) {
-        System.out.println("data is : "+data);
-       /* int[] intArray = Arrays.stream(data.split(","))
+    public FindIntersect getIntersectionResult(String listOne, String listTwo, String hashKey) {
+
+        int[] listA = Arrays.stream(listOne.split(","))
                 .mapToInt(Integer::parseInt)
                 .toArray();
-        Integer[] what = Arrays.stream( intArray ).boxed().toArray( Integer[]::new );*/
-        Integer arrayOne[] = new Integer []{2, 3, 4, 5, 6,9,9,9,100};
-        Integer arrayTwo[] =  new Integer[]{4, 6, 7, 8, 9,11,13,19,100,3};
-        FindIntersect res= mHelper.calculateIntersection(arrayOne,arrayTwo);
+        int[] listB = Arrays.stream(listTwo.split(","))
+                .mapToInt(Integer::parseInt)
+                .toArray();
+        Integer[] arrayOne = Arrays.stream( listA ).boxed().toArray( Integer[]::new );
+        Integer[] arrayTwo = Arrays.stream( listB ).boxed().toArray( Integer[]::new );
+       // Integer arrayOne[] = new Integer []{2, 3, 4, 5, 6,9,9,9,100};
+        // Integer arrayTwo[] =  new Integer[]{4, 6, 7, 8, 9,11,13,19,100,3};
+        FindIntersect res= mHelper.calculateIntersection(arrayOne,arrayTwo,hashKey);
         return res;
 
       //  return attendanceRepository.getData(id);

@@ -10,8 +10,8 @@ public class FindIntersectService {
     @Autowired
     FindIntersectRepo mFindIntersectRepo;
 
-    public FindIntersect getIntersection(String data) {
-        return mFindIntersectRepo.getIntersectionResult(data);
+    public FindIntersect getIntersection(String listOne, String listTwo, String hashKey) {
+        return mFindIntersectRepo.getIntersectionResult(listOne,listTwo,hashKey);
         //return attendanceRepository.getData(id);
     }
 }
