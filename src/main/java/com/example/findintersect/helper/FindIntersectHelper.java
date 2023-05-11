@@ -45,7 +45,7 @@ public class FindIntersectHelper {
         System.out.println(result);
         long timeElapsed = Duration.between(start, finish).toMillis();
         String timeInMillSec= Long.toString(timeElapsed);
-        FindIntersect findIntersect = new FindIntersect(result,timeInMillSec);
+        FindIntersect findIntersect = new FindIntersect(result,timeInMillSec,result.size());
         return findIntersect;
     }
 }

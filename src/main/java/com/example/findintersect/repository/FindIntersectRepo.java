@@ -15,8 +15,8 @@ public class FindIntersectRepo {
     FindIntersectHelper mHelper;
     public FindIntersect getIntersectionResult(String listOne, String listTwo, String hashKey) {
 
-        int[] listA = IntStream.generate(() -> new Random().nextInt(100)).limit(Integer.parseInt(listOne)).toArray();
-        int[] listB = IntStream.generate(() -> new Random().nextInt(100)).limit(Integer.parseInt(listTwo)).toArray();
+        int[] listA = IntStream.generate(() -> new Random().nextInt(100000)).limit(Integer.parseInt(listOne)).toArray();
+        int[] listB = IntStream.generate(() -> new Random().nextInt(100000)).limit(Integer.parseInt(listTwo)).toArray();
         Integer[] arrayOne = Arrays.stream( listA ).boxed().toArray( Integer[]::new );
         Integer[] arrayTwo = Arrays.stream( listB ).boxed().toArray( Integer[]::new );
         FindIntersect res= mHelper.calculateIntersection(arrayOne,arrayTwo,hashKey);

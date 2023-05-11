@@ -6,12 +6,23 @@ public class FindIntersect {
     private List<Integer> intersectionList;
     private String timeInMillSec;
 
+    private long listSize;
+
     public FindIntersect() {
     }
 
-    public FindIntersect(List<Integer> intersectionList, String timeInMillSec) {
+    public FindIntersect(List<Integer> intersectionList, String timeInMillSec, long listSize) {
         this.intersectionList = intersectionList;
         this.timeInMillSec = timeInMillSec;
+        this.listSize=listSize;
+    }
+
+    public long getListSize() {
+        return listSize;
+    }
+
+    public void setListSize(long listSize) {
+        this.listSize = listSize;
     }
 
     public List<Integer> getIntersectionList() {
@@ -36,6 +47,7 @@ public class FindIntersect {
         return "FindIntersect{" +
                 "intersectionList=" + intersectionList +
                 ", timeInMillSec='" + timeInMillSec + '\'' +
+                ", listSize='" + listSize + '\'' +
                 '}';
     }
 }
