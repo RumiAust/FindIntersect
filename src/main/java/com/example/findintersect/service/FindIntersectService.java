@@ -12,6 +12,5 @@ public class FindIntersectService {
 
     public FindIntersect getIntersection(String listOne, String listTwo, String hashKey) {
         return mFindIntersectRepo.getIntersectionResult(listOne,listTwo,hashKey);
-        //return attendanceRepository.getData(id);
     }
 }

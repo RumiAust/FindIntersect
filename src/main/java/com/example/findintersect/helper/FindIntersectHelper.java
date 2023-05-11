@@ -45,16 +45,8 @@ public class FindIntersectHelper {
         System.out.println(result);
         long timeElapsed = Duration.between(start, finish).toMillis();
         String timeInMillSec= Long.toString(timeElapsed);
-        System.out.println("Time in Milliseconds: "+timeElapsed);
-         /*   for(int val: iteratorList){
-            if(addToHashSet.contains(val)){
-                System.out.println(val);
-            }
-        }*/
         FindIntersect findIntersect = new FindIntersect(result,timeInMillSec);
-
         return findIntersect;
-       // return attendanceRepository.getData(id);
     }
 }
 

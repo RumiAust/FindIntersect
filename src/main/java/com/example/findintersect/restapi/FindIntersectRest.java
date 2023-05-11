@@ -24,7 +24,6 @@ public class FindIntersectRest {
     }
     @GetMapping("/findIntersection")
     public ResponseEntity<FindIntersect> getAttendanceData(@RequestParam String param1, @RequestParam String param2,@RequestParam String param3) {
-        System.out.println("A: "+param1 + " B:"+" C:"+param3);
        return ResponseEntity.ok(mFindIntersectService.getIntersection(param1,param2,param3));
 
     }

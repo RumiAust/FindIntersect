@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 public class FindIntersectApplication {
 
     public static void main(String[] args) {
-        System.out.println("hello world");
         SpringApplication.run(FindIntersectApplication.class, args);
     }
 
