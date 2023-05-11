@@ -8,7 +8,7 @@
 - In case the 8080 port is blocked, you can change the port number under resource `application.properties` file `server.port:yourPortNumber`
 - Once the backend is running
 - Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
-- Insert two list values in comma separated way example list one `1,2,3,4,5`  list two `3,4,5,6,7,8,9`
+- Insert two collection size like collection one 60, collection two 90
 - The radio button is to decide which list you want to make Hashset or which one to be the iterator 
 - You the leave the decision on program `Set large list to Hashset` that will take the large set as Hashset
 - In case both set is equal in above option, it will take list one as hashset
