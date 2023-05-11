@@ -20,7 +20,6 @@ public class FindIntersectRest {
     @GetMapping("/hello")
     public String getData() {
         return "Hello World";
-        //return attendanceService.getData(id);
     }
     @GetMapping("/findIntersection")
     public ResponseEntity<FindIntersect> getAttendanceData(@RequestParam String param1, @RequestParam String param2,@RequestParam String param3) {
