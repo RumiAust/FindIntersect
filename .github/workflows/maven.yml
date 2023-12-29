@@ -54,6 +54,6 @@ jobs:
       with:
           context: .
           push: true
-          tags: muktadir2375/findintersect-image:latest
+          tags: muktadir2375/java-maven-app:tagname
 
 
